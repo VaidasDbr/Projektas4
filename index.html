@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+		#calendar {display:flex;flex-wrap:wrap;width:434px;background-color:white;font-size:8px;border:7px solid whitesmoke;}
+		#calendar div{min-width: 20px; line-height: 20px;text-align:center;}
+		#calendar .day{background-color: white;color:black;}
+		#calendar .day2{color:red;}
+		#calendar .day3{color:red;background-color: antiquewhite;}
+		#calendar .day4{color:white;background-color:limegreen;font-size: 7px;line-height: 12px;}
+		#calendar .day5{color:white;background-color:limegreen;width: 140px;font-size: 10px;
+		line-height: 12px;padding-top: 4px;}
+		#calendar .day6{background-color: whitesmoke;}
+		#calendar .day7{color:black;background-color:whitesmoke;width:135px;font-size:10px;
+			text-align: left;font-size: 8px;padding-left: 5px; line-height: 12px;}
+		#calendar .p{background-color: whitesmoke;min-width: 7px; line-height: 20px;}
+	</style>
+</head>
+<body style="background-color: black;">
+    <main style="margin-left: calc(50% - 210px);">
+        <div id="calendar">
+        <div class="day5">Sausis</div><div class="p"></div><div class="day5">Vasaris</div>
+        <div class="p"></div><div class="day5">Kovas</div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div>
+        <div></div><div></div><div></div><div></div><div></div>
+        <div class="day3">1</div>
+        <div class="day2">2</div>
+        <div></div><div class="p"></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day2">6</div>
+        <div></div><div class="p"></div>
+        <div class="day6">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day2">6</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day2">9</div><div class="p"></div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day2">13</div><div class="p"></div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day3">11</div>
+        <div class="day">12</div>
+        <div class="day2">13</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day2">16</div><div class="p"></div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day3">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day2">20</div><div class="p"></div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day2">20</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day2">23</div><div class="p"></div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day2">27</div><div class="p"></div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day2">27</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day2">30</div><div class="p"></div>
+        <div class="day">28</div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div class="p"></div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div></div><div></div><div></div>
+        <div class="day">31</div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div class="p"></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="p"></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="day7" style="padding-top: 7px;">01-01 <span style="color:limegreen;">Naujieji metai</span></div>
+        <div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">02-16 <span style="color:limegreen;">Lietuvos Valstybės atkūrimo diena</span>
+        </div><div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">03-01 <span style="color:limegreen;">Užgavėnės</span></div>
+        <div class="day7"></div><div class="p"></div><div class="day7"></div><div class="p"></div>
+        <div class="day7">03-11 <span style="color:limegreen;">Nepriklausomybės atkūrimo diena</span>
+        </div><div class="day7" style="color:white;">0</div><div class="p"></div>
+        <div class="day7"></div><div class="p"></div><div class="day7"></div>
+        <div class="day5">Balandis</div><div class="p"></div><div class="day5">Gegužė</div>
+        <div class="p"></div><div class="day5">Birželis</div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div>
+        <div></div><div></div><div></div><div></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day2">3</div><div class="p"></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="day3">1</div><div class="p"></div>
+        <div></div><div></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day3">5</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day2">10</div><div class="p"></div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day2">8</div><div class="p"></div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day2">12</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day3">17</div><div class="p"></div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day2">15</div><div class="p"></div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day2">19</div>
+        <div class="day3">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day2">24</div><div class="p"></div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day2">22</div><div class="p"></div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day3">24</div>
+        <div class="day">25</div>
+        <div class="day2">26</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div></div><div class="p"></div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day2">29</div><div class="p"></div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div class="p"></div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div></div><div></div><div></div><div></div><div></div><div class="p"></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="day7" style="padding-top: 7px;">04-17 <span style="color:limegreen;">Velykos</span></div><div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">05-01 <span style="color:limegreen;">Tarptautinė darbo diena</span></div>
+        <div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">06-05 <span style="color:limegreen;">Tėvo diena</span></div>
+        <div class="day7">04-18 <span style="color:limegreen;">Velykų antroji diena</span></div>
+        <div class="p"></div>
+        <div class="day7">05-01 <span style="color:limegreen;">Motinos diena</span></div>
+        <div class="p"></div><div class="day7">06-24 <span style="color:limegreen;">Joninės</span></div>
+        <div class="day7" style="color:white;">0</div><div class="p"></div><div class="day7"></div>
+        <div class="p"></div><div class="day7"></div>
+        <div class="day5">Liepa</div><div class="p"></div><div class="day5">Rugpjūtis</div>
+        <div class="p"></div><div class="day5">Rugsėjis</div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div>
+        <div></div><div></div><div></div><div></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day2">3</div><div class="p"></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day2">7</div><div class="p"></div>
+        <div></div><div></div><div></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day2">4</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day3">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day2">10</div><div class="p"></div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day2">14</div><div class="p"></div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day2">11</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day2">17</div><div class="p"></div>
+        <div class="day3">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day2">21</div><div class="p"></div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day2">18</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day2">24</div><div class="p"></div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day2">28</div><div class="p"></div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day2">25</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day2">31</div><div class="p"></div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div></div><div></div><div></div><div></div><div class="p"></div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div></div><div></div>
+        <div style="color:white;">0</div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div class="p"></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div class="p"></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+        <div class="day7" style="padding-top: 7px;">07-06 <span style="color:limegreen;">Karaliaus Mindaugo karūnavimo</span></div><div class="p"></div><div class="day7" style="padding-top: 7px;">08-15 <span style="color:limegreen;">Žolinė</span></div>
+        <div class="p"></div><div class="day7"></div>
+        <div class="day7"><span style="color:limegreen;">diena</span></div><div class="p"></div>
+        <div class="day7"></div><div class="p"></div><div class="day7"></div>
+        <div class="day7" style="color:white;">0</div><div class="p"></div><div class="day7"></div>
+        <div class="p"></div><div class="day7"></div>
+        <div class="day5">Spalis</div><div class="p"></div><div class="day5">Lapkritis</div>
+        <div class="p"></div><div class="day5">Gruodis</div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div><div class="p"></div>
+        <div class="day4">Pr</div><div class="day4">An</div><div class="day4">Tr</div>
+        <div class="day4">Ke</div><div class="day4">Pe</div><div class="day4">Še</div>
+        <div class="day4">Se</div>
+        <div></div><div></div><div></div><div></div><div></div>
+        <div class="day">1</div>
+        <div class="day2">2</div><div class="p"></div>
+        <div></div>
+        <div class="day3">1</div>
+        <div class="day3">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day2">6</div><div class="p"></div>
+        <div></div><div></div><div></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day2">4</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day2">9</div><div class="p"></div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day2">13</div><div class="p"></div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day2">11</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day2">16</div><div class="p"></div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day2">20</div><div class="p"></div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day2">18</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day2">23</div><div class="p"></div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day2">27</div><div class="p"></div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day3">24</div>
+        <div class="day3">25</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day2">30</div><div class="p"></div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div></div><div></div><div></div><div></div><div class="p"></div>
+        <div class="day3">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div></div>
+        <div class="day">31</div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div class="p"></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div class="p"></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div>
+        <div class="day7"></div><div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">11-01 <span style="color:limegreen;">Visų šventųjų diena</span></div>
+        <div class="p"></div>
+        <div class="day7" style="padding-top: 7px;">12-24 <span style="color:limegreen;">Šv. Kūčios</span></div>
+        <div class="day7"></div><div class="p"></div>
+        <div class="day7">11-02 <span style="color:limegreen;">Vėlinės</span></div>	
+        <div class="p"></div>
+        <div class="day7">12-25 <span style="color:limegreen;">Šv. Kalėdos</span></div>
+        <div class="day7"></div><div class="p"></div><div class="day7"></div><div class="p"></div>
+        <div class="day7">12-26 <span style="color:limegreen;">Šv. Kalėdų antroji diena</span></div>
+        </div>
+    </main>
+</body>
+</html>
